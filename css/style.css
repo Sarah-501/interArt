@@ -1,0 +1,343 @@
+/*_____________ GENERAL _______________*/
+html{
+    font-size: 62.5%;
+}
+
+body{
+    margin:0;
+    font-size: 1.8rem;
+    font-family: 'Fjalla One', sans-serif;
+    color:#414141;
+}
+/*________________ HEADER ______________*/
+
+header, .reseaux-sociaux{
+    background-color: #007f9a;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-image: url(../images/path.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+header strong,a , .reseaux-sociaux a,footer p{
+    color: #f9f9f9;
+    text-decoration: none;
+}
+header nav {
+    font-size: 2rem;
+}
+
+header nav a{
+    margin:0 2rem;
+    padding: 1rem 2rem;
+}
+
+header nav a:hover{
+    background-color: #f9f9f9;
+    color:#007f9a;
+}
+/*_______________ MAIN ________________*/
+ main, .container{
+     max-width: 1500px;
+     margin: auto;
+ }
+    /*_______________ SECTION 1 ________________*/
+
+.conception-realisation{
+    background-image: url(../images/bg-header.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem 0;
+}
+.conception-realisation h1{
+    font-size: 2.4rem;
+    background-color: #e4ae48;
+    color: #f9f9f9;
+    padding: 0.8rem 1rem;
+    text-transform: uppercase;
+
+}
+
+.conception-realisation p{
+    color: #007f9a;
+    background-color:#f9f9f9;
+    padding: 0.5rem 1rem;
+}
+
+/*_______________ SECTION 2 ________________*/
+
+h2{
+    text-align: center;
+    color:#007f9a;
+}
+.prestation .listArticle{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.prestation article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 23%;
+    margin-right: 3rem;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+.prestation a{
+    background-color:#007f9a;
+    color: white;
+    padding: 3% 25% ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: large;
+    border-radius: 2%;
+}
+.prestation i{
+    color:#f9f9f9;
+    background-color: #e4ae48;
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+}
+.prestation h3{
+    color:#007f9a;
+}
+    /*_______________ SECTION 3 ________________*/
+
+.prestataire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.prestataire .listImg {
+    display: flex;
+    justify-content: space-between;
+}
+span{
+    color:#e4ae48;
+    font-weight: 100;
+}
+.prestataire img{
+    width: 23%;
+    border: 0.1rem solid #007f9a;
+}
+
+/*______________ FOOTER __________________*/
+footer{
+    margin-top: 3rem;
+    
+}
+.reseaux-sociaux nav>i{
+    color:#f9f9f9;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+.footer{
+    background-color:#414141 ;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.footer img{
+    display: block;
+    margin: auto;
+    width: 40px;
+}
+.footer p{
+    text-align: center;
+}
+
+/*________________ TABLETTE VERSION _____________*/
+@media screen and (max-width:1100px){
+    header nav{
+        display: flex;
+        flex-direction: column;    
+    }
+    header img,strong{
+        margin-bottom: 1rem;
+    }
+    header nav>a{
+        margin-bottom: 2rem;
+    }
+}
+
+/*________________ MOBILE VERSION _____________*/
+@media screen and (min-width:631px) and (max-width:780px){
+    header{
+        display: flex;
+        flex-direction: column;    
+    }
+    header nav{
+        display: flex;
+        flex-direction: row;
+        padding-top: 2rem;
+    }
+    .prestation .listArticle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        padding: 0 5rem;
+    }  
+
+    .prestation article{
+        width: 100%;
+        margin-bottom: 3rem;
+        padding: 2rem;
+        margin-right: 0;
+    }  
+
+    .prestataire .listImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .prestataire img{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .reseaux-sociaux{
+        display: flex;
+        flex-direction: column-reverse;   
+        justify-content: center; 
+        align-items: center;
+    }
+    .reseaux-sociaux nav{
+        margin-bottom: 2rem;
+    }
+}
+
+/*________________ PETIT MOBILE VERSION ____________*/
+@media screen and (max-width:630px){
+    header nav{
+        display: flex;
+        flex-direction: column; 
+        padding-top: 1rem;   
+    }
+    header img,strong{
+        margin-bottom: 1rem;
+    }
+    header nav>a{
+        margin-bottom: 2rem;
+    }
+    header nav>a:hover{
+        padding:0 10rem;
+    }
+    header{
+        display: flex;
+        flex-direction: column;    
+    }     
+    .prestation .listArticle{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center; 
+         padding:0 10rem;
+     }  
+ 
+     .prestation article{
+         width: 100%;
+         margin-bottom: 3rem;
+         padding: 2rem;
+         margin-right: 0;
+     }  
+ 
+     .prestataire .listImg {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+     }
+     .prestataire img{
+         width: 100%;
+         margin-bottom: 2rem;
+     }
+ 
+     .reseaux-sociaux{
+         display: flex;
+         flex-direction: column-reverse;   
+         justify-content: center; 
+         align-items: center;
+     }
+     .reseaux-sociaux nav{
+         margin-bottom: 2rem;
+     }
+}
+/*________________ TABLETTE VERSION _____________*/
+@media screen and (min-width:781px) and (max-width:1100px){
+    header{
+        display: flex;
+        flex-direction: column;    
+    }
+    header nav{
+        display: flex;
+        flex-direction: row;
+        padding-top: 2rem;
+    }
+     
+     .prestation .listArticle{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         padding:0 10rem;
+     }  
+ 
+     .prestation article{
+         width: 40%;
+         margin-bottom: 3rem;
+         padding: 2rem;
+     }  
+ 
+     .prestataire .listImg {
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         flex-wrap: wrap;
+         
+     }
+     .prestataire img{
+         width: 40%;
+         margin-bottom: 5rem;
+     }
+}
+/************** Actualité CSS ******************/
+.actualite{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.actualite .actualite1{
+    background-color: #ededed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cuisinevivre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.act1 img{
+    width: 26.1rem;
+}
+.actualite .temoignages{
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.actualite .actualite2{
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
